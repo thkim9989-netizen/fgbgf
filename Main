@@ -10,20 +10,21 @@
     src: local('Arial Narrow'), local('Helvetica Neue Condensed Bold');
   }
   :root{
-    --bg:#0D0D0D;
-    --bg-raised:#161513;
-    --tape:#F5F1E8;
-    --tape-dim:#E7E1D2;
-    --red:#C7361F;
-    --red-dim:#8C2416;
-    --green:#3F7A4E;
-    --green-glow:rgba(63,122,78,0.35);
-    --amber:#C68A2E;
-    --amber-glow:rgba(198,138,46,0.35);
-    --ink:#1A1815;
-    --muted:#8A8578;
-    --muted-light:#B8B2A2;
-    --line: rgba(245,241,232,0.12);
+    --bg:#FFFFFF;
+    --bg-raised:#F5F5F3;
+    --well:#FFFFFF;
+    --tape:#111111;
+    --tape-dim:#ECEBE6;
+    --red:#111111;
+    --red-dim:#6B6B66;
+    --green:#111111;
+    --green-glow:rgba(17,17,17,0.15);
+    --amber:#DEDDD7;
+    --amber-glow:rgba(17,17,17,0.05);
+    --ink:#111111;
+    --muted:#111111;
+    --muted-light:#111111;
+    --line: rgba(17,17,17,0.14);
     --font-display: 'Arial Narrow', 'Helvetica Neue Condensed Bold', Impact, sans-serif;
     --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-mono: 'SF Mono', 'Roboto Mono', ui-monospace, Menlo, Consolas, monospace;
@@ -33,14 +34,12 @@
   html,body{ margin:0; padding:0; background:var(--bg); color:var(--tape); font-family:var(--font-body); }
   body{
     padding-bottom: 60px;
-    background-image:
-      radial-gradient(ellipse at top, rgba(199,54,31,0.08), transparent 60%);
   }
 
   /* ---------- HEADER / MARQUEE ---------- */
   .marquee{
     position: sticky; top:0; z-index:50;
-    background: linear-gradient(180deg, #141210 0%, #0D0D0D 100%);
+    background: var(--bg);
     border-bottom: 3px solid var(--red);
     padding: 14px 16px 10px;
   }
@@ -79,7 +78,7 @@
     overflow-x:auto;
     gap: 6px;
     padding: 10px 12px 12px;
-    background: #0D0D0D;
+    background: var(--bg);
     border-bottom: 1px solid var(--line);
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -104,13 +103,13 @@
   .tab.active{
     background: var(--red);
     border-color: var(--red);
-    color: var(--tape);
+    color: #FFFFFF;
   }
-  .tab.active .d{ color: rgba(245,241,232,0.75); }
+  .tab.active .d{ color: rgba(255,255,255,0.75); }
   .tab .check{
     position:absolute; top:-5px; right:-5px;
     width:16px; height:16px; border-radius:50%;
-    background: var(--green); color:var(--tape);
+    background: var(--green); color:#FFFFFF;
     font-size: 10px; line-height:16px; text-align:center;
     border: 2px solid var(--bg);
   }
@@ -215,7 +214,7 @@
     margin-bottom: 10px;
     overflow:hidden;
   }
-  .exercise.star{ border-color: rgba(198,138,46,0.4); }
+  .exercise.star{ border-color: rgba(17,17,17,0.35); }
   .ex-head{
     padding: 12px 14px 8px;
     display:flex;
@@ -229,7 +228,7 @@
     color: var(--tape);
     line-height:1.25;
   }
-  .ex-name .star-mark{ color: var(--amber); margin-right:3px; }
+  .ex-name .star-mark{ color: var(--ink); margin-right:3px; }
   .db-tag{
     display:inline-block;
     font-family: var(--font-mono);
@@ -254,7 +253,7 @@
     font-family: var(--font-mono);
     font-size: 10px;
     color: var(--muted-light);
-    background: rgba(245,241,232,0.06);
+    background: rgba(17,17,17,0.05);
     padding: 3px 7px;
     border-radius: 4px;
     white-space:nowrap;
@@ -310,7 +309,7 @@
     height: 46px;
     border-radius: 8px;
     border: 2px solid var(--line);
-    background: var(--ink);
+    background: var(--well);
     color: var(--tape);
     font-family: var(--font-mono);
     font-size: 17px;
@@ -329,7 +328,7 @@
     background: var(--amber);
     border-color: var(--amber);
     box-shadow: 0 0 0 4px var(--amber-glow);
-    color: #1A1815;
+    color: #111111;
   }
 
   /* timed/hold exercises: single duration-style check-off pills instead of rep boxes */
@@ -342,7 +341,7 @@
     height: 46px;
     border-radius: 8px;
     border: 2px solid var(--line);
-    background: var(--ink);
+    background: var(--well);
     color: var(--muted-light);
     font-family: var(--font-mono);
     font-size: 10px;
@@ -398,7 +397,7 @@
     text-transform: uppercase;
     font-weight: 800;
     background: var(--red);
-    color: var(--tape);
+    color: #FFFFFF;
     cursor:pointer;
   }
   .complete-day-btn:active{ background: var(--red-dim); }
@@ -410,7 +409,7 @@
     font-family: var(--font-mono);
     font-size: 11px;
     color: var(--muted-light);
-    background: rgba(199,54,31,0.08);
+    background: rgba(17,17,17,0.05);
     border-left: 3px solid var(--red-dim);
     border-radius: 4px;
     padding: 10px 12px;
@@ -471,7 +470,7 @@
     text-transform: uppercase;
     cursor:pointer;
   }
-  .reset-btn:active{ background: rgba(199,54,31,0.1); }
+  .reset-btn:active{ background: rgba(17,17,17,0.08); }
 
   .confirm-overlay{
     display:none;
@@ -515,8 +514,8 @@
     text-transform:uppercase;
     cursor:pointer;
   }
-  .confirm-cancel{ background: var(--ink); color: var(--muted-light); }
-  .confirm-ok{ background: var(--red); color: var(--tape); }
+  .confirm-cancel{ background: var(--bg-raised); color: var(--tape); border: 1px solid var(--line); }
+  .confirm-ok{ background: var(--red); color: #FFFFFF; }
 
   .save-toast{
     position: fixed;
@@ -549,6 +548,7 @@
   }
   footer.legend .lg-dot{
     display:inline-block; width:8px; height:8px; border-radius:2px; margin-right:5px; vertical-align:middle;
+    border: 1px solid var(--line);
   }
 </style>
 </head>
