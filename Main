@@ -47,7 +47,7 @@
   .marquee h1{
     font-family: var(--font-display);
     font-weight:800;
-    font-size: 32px;
+    font-size: 31px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin:0;
@@ -55,7 +55,7 @@
   }
   .marquee .sub{
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14.5px;
     color: var(--muted);
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -63,7 +63,7 @@
   }
   .bell{
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14.5px;
     color: var(--red);
     border: 1px solid var(--red-dim);
     padding: 4px 8px;
@@ -87,7 +87,7 @@
   .tab{
     flex: 0 0 auto;
     font-family: var(--font-mono);
-    font-size: 17px;
+    font-size: 15.5px;
     font-weight:600;
     color: var(--muted-light);
     background: var(--bg-raised);
@@ -99,7 +99,7 @@
     min-width: 46px;
     position:relative;
   }
-  .tab .d{ display:block; font-size:15px; letter-spacing:1px; color:var(--muted); }
+  .tab .d{ display:block; font-size:13.5px; letter-spacing:1px; color:var(--muted); }
   .tab.active{
     background: var(--red);
     border-color: var(--red);
@@ -132,13 +132,13 @@
   }
   .stat .num{
     font-family: var(--font-mono);
-    font-size: 25px;
+    font-size: 23.5px;
     font-weight:700;
     color: var(--tape);
     display:block;
   }
   .stat .lbl{
-    font-size: 15px;
+    font-size: 13.5px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: var(--muted);
@@ -152,7 +152,7 @@
   .progress-label{
     display:flex; justify-content:space-between;
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14.5px;
     color: var(--muted-light);
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -182,7 +182,7 @@
   }
   .day-title{
     font-family: var(--font-display);
-    font-size: 26px;
+    font-size: 24.5px;
     text-transform: uppercase;
     font-weight:800;
     letter-spacing:0.3px;
@@ -190,7 +190,7 @@
   .day-title .num{ color: var(--red); }
   .rest-day-badge{
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14.5px;
     color: var(--muted);
     letter-spacing:1px;
   }
@@ -201,11 +201,11 @@
     border-radius: 4px;
     padding: 10px 12px;
     margin-bottom: 14px;
-    font-size: 17px;
+    font-size: 16px;
     color: var(--muted-light);
     line-height:1.5;
   }
-  .warmup b{ color: var(--tape); font-family:var(--font-mono); font-size:15px; letter-spacing:1px; text-transform:uppercase; display:block; margin-bottom:4px;}
+  .warmup b{ color: var(--tape); font-family:var(--font-mono); font-size:14px; letter-spacing:1px; text-transform:uppercase; display:block; margin-bottom:4px;}
 
   .exercise{
     background: var(--bg-raised);
@@ -224,7 +224,7 @@
   }
   .ex-name{
     font-weight:700;
-    font-size: 19px;
+    font-size: 17.5px;
     color: var(--tape);
     line-height:1.25;
   }
@@ -232,7 +232,7 @@
   .db-tag{
     display:inline-block;
     font-family: var(--font-mono);
-    font-size: 14px;
+    font-size: 12.5px;
     font-weight:700;
     letter-spacing: 0.5px;
     color: var(--ink);
@@ -244,14 +244,14 @@
   }
   .ex-meta{
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14.5px;
     color: var(--muted);
     margin-top: 3px;
     letter-spacing: 0.3px;
   }
   .ex-target{
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 14px;
     color: var(--muted-light);
     background: rgba(17,17,17,0.05);
     padding: 3px 7px;
@@ -265,7 +265,7 @@
     align-items:center;
     gap:3px;
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.5px;
     color: var(--muted-light);
     background: none;
@@ -279,7 +279,7 @@
   .instr-toggle.open .arrow{ transform: rotate(180deg); }
   .ex-instr{
     display:none;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--muted-light);
     padding: 8px 14px 2px;
@@ -300,7 +300,7 @@
   }
   .set-box .set-lbl{
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 13.5px;
     color: var(--muted);
     letter-spacing: 0.5px;
   }
@@ -312,7 +312,7 @@
     background: var(--well);
     color: var(--tape);
     font-family: var(--font-mono);
-    font-size: 22px;
+    font-size: 20.5px;
     font-weight:700;
     text-align:center;
     transition: all 0.15s ease;
@@ -344,7 +344,7 @@
     background: var(--well);
     color: var(--muted-light);
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 13.5px;
     font-weight: 700;
     display:flex; align-items:center; justify-content:center;
     cursor:pointer;
@@ -365,7 +365,7 @@
   }
   .day-notes label{
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14.5px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--muted);
@@ -380,7 +380,7 @@
     border-radius: 6px;
     color: var(--tape);
     font-family: var(--font-body);
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     padding: 10px 12px;
     resize: vertical;
@@ -394,7 +394,7 @@
     border-radius: 8px;
     border: none;
     font-family: var(--font-display);
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 800;
@@ -409,7 +409,7 @@
 
   .progression-note{
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 15px;
     color: var(--muted-light);
     background: rgba(17,17,17,0.05);
     border-left: 3px solid var(--red-dim);
@@ -427,7 +427,7 @@
   }
   .history h2{
     font-family: var(--font-display);
-    font-size: 19px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 0 0 10px;
@@ -438,12 +438,12 @@
     border-radius: 6px;
     padding: 10px 12px;
     margin-bottom: 8px;
-    font-size: 17px;
+    font-size: 16px;
   }
   .history-item .hi-top{
     display:flex; justify-content:space-between;
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 14px;
     color: var(--muted-light);
     margin-bottom: 4px;
   }
@@ -451,7 +451,7 @@
   .history-item .hi-note{ color: var(--muted-light); line-height:1.4; }
   .history-empty{
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 15px;
     color: var(--muted);
     text-align:center;
     padding: 20px 0;
@@ -467,7 +467,7 @@
     background: transparent;
     color: var(--red);
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -494,13 +494,13 @@
   }
   .confirm-box h3{
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 19px;
     text-transform:uppercase;
     margin: 0 0 8px;
     color: var(--red);
   }
   .confirm-box p{
-    font-size: 17px;
+    font-size: 16px;
     color: var(--muted-light);
     line-height:1.5;
     margin: 0 0 16px;
@@ -512,7 +512,7 @@
     border-radius: 6px;
     border: none;
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing:0.5px;
     text-transform:uppercase;
@@ -528,7 +528,7 @@
     background: var(--green);
     color: #fff;
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 8px 16px;
@@ -543,7 +543,7 @@
   footer.legend{
     margin: 20px 12px 0;
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 14.5px;
     color: var(--muted);
     display:flex;
     gap: 14px;
